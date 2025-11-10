@@ -16,7 +16,7 @@ A multi-modal product recommendation system that uses both text and image embedd
   - Real-time weight visualization
 
 - **State-of-the-Art Models:**
-  - Text: LaBSE (Language-agnostic BERT Sentence Embedding) - Multilingual support
+  - Text: Multilingual MiniLM-L12-v2 - Fast multilingual support (including Turkish)
   - Image: ResNet50 pre-trained on ImageNet
 
 - **Interactive UI:**
@@ -49,7 +49,7 @@ streamlit run app.py
 ## How It Works
 
 ### Text Embeddings
-The system uses LaBSE (Language-agnostic BERT Sentence Embedding) to convert product names and descriptions into dense vector representations. This model is specifically designed to work with multiple languages, including Turkish.
+The system uses Multilingual MiniLM-L12-v2 to convert product names and descriptions into dense vector representations. This lightweight model is specifically designed to work with multiple languages, including Turkish, and offers fast inference times.
 
 ### Image Embeddings
 Product images are processed using ResNet50, a deep convolutional neural network pre-trained on ImageNet. The final classification layer is removed to extract 2048-dimensional feature vectors.
